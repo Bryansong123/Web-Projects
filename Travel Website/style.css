@@ -272,116 +272,85 @@
 
 
 /* Section Services Start */
-.services{
+.services {
   background: #f9f9f9;
   padding-top: 30px;
-  height: 850px;
+  min-height: 850px;
 }
-.services .card{
+.services .card {
   box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
   border: none;
   cursor: pointer;
-  height: 300;
+  min-height: 300px;
 }
 
-.services .card:hover{
+.services .card:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
   border: none;
-  cursor: pointer;
 }
-.services .card i{
+.services .card i {
   font-size: 80px;
   text-align: center;
   color: #0d92ff;
   margin-top: 20px;
 }
-.services .card .card-body h3{
+.services .card .card-body h3 {
   font-weight: 600;
 }
-.services .card .card-body{
+.services .card .card-body {
   text-align: center;
 }
 
-@media (max-width:973px){
-  .services .card{
-    height:400px
+@media (max-width: 973px) {
+  .services .card {
+    min-height: 400px;
   }
   .services {
-    height: 1080px;
+    min-height: 1080px;
   }
 }
 
-@media (max-width:768px){
-  .services .card{
-    height:300px
+@media (max-width: 768px) {
+  .services .card {
+    min-height: 300px;
   }
   .services {
-    height: 135vh;
-
-  ;
+    min-height: auto; /* Allow dynamic height */
   }
 }
-@media (max-width:450px){
-  .services .card{
-    height:300px
+
+@media (max-width: 450px) {
+  .services .card {
+    min-height: 300px;
   }
   .services {
-    height:160vh;
+    min-height: auto; /* Allow dynamic height */
   }
-  }
-
-  @media (max-width:415px){
-    .services .card{
-      height:300px
-    }
-    .services {
-      height: 170vh;
-    }
-    }
-
-
-  @media (max-width:295px){
-    .services .card{
-      height:400px
-    }
-    .services {
-      height:210vh;
-    }
-    }
-
-/* Section Services End */
-
-
-
-
+}
 
 /* Section Gallery Start */
-.gallary{
+.gallery {
   margin-top: 50px;
 }
-.gallary .card{
+.gallery .card {
   border-radius: 10px;
   box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
   cursor: pointer;
 }
-.gallary .card img{
+.gallery .card img {
   border-radius: 10px;
   transition: 0.5s;
 }
-.gallary .card img:hover{
+.gallery .card img:hover {
   transform: scale(1.1);
 }
 
-@media (max-width:769px){
-  .row {
-    margin-top: 300px
-    
+@media (max-width: 769px) {
+  .gallery .row {
+    margin-top: 20px; /* Reduce to prevent overlap */
   }
 }
-
-
-
-/* Section Gallary End */
+/* Section Gallery End */
 
 
 
